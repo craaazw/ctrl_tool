@@ -15,7 +15,7 @@ Run command
 ```
 docker run -d --name slate \
 	-p 4567:4567 \
-	-v /Users/crazw/Github/docker/slate/slate/source/:/app/source \
+	-v /Users/crazw/Github/docker/slate/source/:/app/source \
 	crazw/slate
 ```
 
@@ -40,5 +40,10 @@ Use Docker Compose to run it:
     docker-compose up --build
 
 Go to `http://localhost:4567/` and you will see your new API beautiful documentation.
+
+
+Reference
+------
+**tutum-docker-slate**：[https://github.com/tutumcloud/slate](https://github.com/tutumcloud/slate)
 
 
