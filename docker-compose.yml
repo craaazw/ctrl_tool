@@ -1,6 +1,21 @@
-version: "2"
+version: "2.0"
 services:
     slate:
-        build: .
+        container_name: slate
+        image: crazw/slate
         ports:
             - "4567:4567"
+        volumes:
+            - /Users/crazw/Github/docker/slate/source/slate/:/app/source
+
+
+
+    vpe-api:
+        container_name: vpe-api
+        image: crazw/slate
+        ports:
+            - "4500:4567"
+        volumes:
+            - /Users/crazw/Github/docker/slate/source/vpe-api/:/app/source
+
+
