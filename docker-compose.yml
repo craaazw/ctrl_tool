@@ -8,8 +8,6 @@ services:
         volumes:
             - /Users/crazw/Github/docker/slate/source/slate/:/app/source
 
-
-
     vpe-api:
         container_name: vpe-api
         image: crazw/slate
